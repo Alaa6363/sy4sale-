@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الإعلان - سوريا للبيع</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ad-details.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="sticky-header-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-text">سوريا للبيع</span>
+                        </a>
+                    </div>
+                    
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن أي شيء...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
+                        <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                        <a href="register.html" class="btn btn-outline">إنشاء حساب</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="cars.html">سيارات</a></li>
+                    <li><a href="new-cars.html">سيارات جديدة</a></li>
+                    <li><a href="used-cars.html">سيارات مستعملة</a></li>
+                    <li><a href="automotive-categories.html">فئات السيارات</a></li>
+                    <li><a href="real-estate.html">عقارات</a></li>
+                    <li><a href="electronics.html">إلكترونيات</a></li>
+                    <li><a href="jobs.html">وظائف</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="category.html?cat=cars">سيارات</a></li>
+                <li>سيارة هوندا سيفيك 2020</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Ad Details Section -->
+    <section class="ad-details">
+        <div class="container">
+            <div class="ad-details-wrapper">
+                <!-- Ad Gallery -->
+                <div class="ad-gallery">
+                    <div class="main-image">
+                        <img src="https://via.placeholder.com/800x500" alt="سيارة هوندا سيفيك 2020" id="main-ad-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://via.placeholder.com/150x100" alt="صورة 1" class="thumbnail active" onclick="changeImage(this, 'https://via.placeholder.com/800x500')">
+                        <img src="https://via.placeholder.com/150x100" alt="صورة 2" class="thumbnail" onclick="changeImage(this, 'https://via.placeholder.com/800x500?text=Image+2')">
+                        <img src="https://via.placeholder.com/150x100" alt="صورة 3" class="thumbnail" onclick="changeImage(this, 'https://via.placeholder.com/800x500?text=Image+3')">
+                        <img src="https://via.placeholder.com/150x100" alt="صورة 4" class="thumbnail" onclick="changeImage(this, 'https://via.placeholder.com/800x500?text=Image+4')">
+                    </div>
+                </div>
+
+                <!-- Ad Info -->
+                <div class="ad-info">
+                    <div class="ad-header">
+                        <h1 class="ad-title">سيارة هوندا سيفيك 2020</h1>
+                        <div class="ad-meta">
+                            <span class="ad-date"><i class="fas fa-calendar-alt"></i> نُشر منذ 3 أيام</span>
+                            <span class="ad-views"><i class="fas fa-eye"></i> 120 مشاهدة</span>
+                            <span class="ad-id"><i class="fas fa-tag"></i> رقم الإعلان: 12345</span>
+                        </div>
+                        <div class="ad-price">15,000,000 ل.س</div>
+                    </div>
+
+                    <div class="ad-details-box">
+                        <h3>تفاصيل الإعلان</h3>
+                        <div class="ad-attributes">
+                            <div class="attribute">
+                                <span class="attribute-label">الحالة:</span>
+                                <span class="attribute-value">مستعمل - بحالة ممتازة</span>
+                            </div>
+                            <div class="attribute">
+                                <span class="attribute-label">الماركة:</span>
+                                <span class="attribute-value">هوندا</span>
+                            </div>
+                            <div class="attribute">
+                                <span class="attribute-label">الموديل:</span>
+                                <span class="attribute-value">سيفيك</span>
+                            </div>
+                            <div class="attribute">
+                                <span class="attribute-label">سنة الصنع:</span>
+                                <span class="attribute-value">2020</span>
+                            </div>
+                            <div class="attribute">
+                                <span class="attribute-label">عدد الكيلومترات:</span>
+                                <span class="attribute-value">45,000 كم</span>
+                            </div>
+                            <div class="attribute">
+                                <span class="attribute-label">نوع الوقود:</span>
+                                <span class="attribute-value">بنزين</span>
+                            </div>
+                            <div class="attribute">
+                                <span class="attribute-label">ناقل الحركة:</span>
+                                <span class="attribute-value">أوتوماتيك</span>
+                            </div>
+                            <div class="attribute">
+                                <span class="attribute-label">اللون:</span>
+                                <span class="attribute-value">أبيض</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ad-description">
+                        <h3>الوصف</h3>
+                        <p>سيارة هوندا سيفيك موديل 2020 بحالة ممتازة، استخدام شخصي، صيانة دورية في الوكالة، جميع الكماليات، فرش جلد، مثبت سرعة، كاميرا خلفية، حساسات، نظام ملاحة، بلوتوث.</p>
+                        <p>السيارة خالية من الحوادث والأعطال، إطارات جديدة، بطارية جديدة.</p>
+                        <p>السعر قابل للتفاوض البسيط للجادين فقط.</p>
+                    </div>
+
+                    <div class="ad-location">
+                        <h3>الموقع</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> دمشق - المزة</p>
+                        <div class="location-map">
+                            <img src="https://via.placeholder.com/600x300?text=Map" alt="الموقع على الخريطة" class="map-image">
+                        </div>
+                    </div>
+
+                    <div class="contact-seller">
+                        <h3>اتصل بالبائع</h3>
+                        <div class="seller-info">
+                            <div class="seller-avatar">
+                                <img src="https://via.placeholder.com/50x50" alt="صورة البائع">
+                            </div>
+                            <div class="seller-details">
+                                <h4 class="seller-name">أحمد محمد</h4>
+                                <p class="seller-member-since"><i class="fas fa-user-clock"></i> عضو منذ: يناير 2022</p>
+                                <div class="seller-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="tel:+963912345678" class="btn btn-primary"><i class="fas fa-phone"></i> اتصل الآن</a>
+                            <a href="#" class="btn btn-outline"><i class="fas fa-comment"></i> راسل البائع</a>
+                            <button class="btn btn-outline favorite-btn"><i class="far fa-heart"></i> أضف للمفضلة</button>
+                            <button class="btn btn-outline share-btn"><i class="fas fa-share-alt"></i> مشاركة</button>
+                        </div>
+                    </div>
+
+                    <div class="safety-tips">
+                        <h3>نصائح للسلامة</h3>
+                        <ul>
+                            <li>تحقق من السلعة قبل الشراء</li>
+                            <li>التقِ البائع في مكان عام</li>
+                            <li>لا ترسل أموالاً مقدماً</li>
+                            <li>تأكد من الأوراق الثبوتية للسيارة</li>
+                        </ul>
+                    </div>
+
+                    <div class="report-ad">
+                        <a href="#"><i class="fas fa-flag"></i> الإبلاغ عن هذا الإعلان</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Similar Ads -->
+            <div class="similar-ads">
+                <h3 class="section-title">إعلانات مشابهة</h3>
+                <div class="listings-grid">
+                    <!-- Similar Ad 1 -->
+                    <div class="listing-card">
+                        <div class="listing-img">
+                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
+                            <span class="listing-badge">مميز</span>
+                        </div>
+                        <div class="listing-content">
+                            <h4 class="listing-title">تويوتا كامري 2019</h4>
+                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
+                            <p class="listing-price">18,000,000 ل.س</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Similar Ad 2 -->
+                    <div class="listing-card">
+                        <div class="listing-img">
+                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
+                        </div>
+                        <div class="listing-content">
+                            <h4 class="listing-title">هيونداي النترا 2021</h4>
+                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
+                            <p class="listing-price">16,500,000 ل.س</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Similar Ad 3 -->
+                    <div class="listing-card">
+                        <div class="listing-img">
+                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
+                        </div>
+                        <div class="listing-content">
+                            <h4 class="listing-title">كيا سيراتو 2020</h4>
+                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> اللاذقية</p>
+                            <p class="listing-price">14,000,000 ل.س</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Similar Ad 4 -->
+                    <div class="listing-card">
+                        <div class="listing-img">
+                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
+                            <span class="listing-badge">مميز</span>
+                        </div>
+                        <div class="listing-content">
+                            <h4 class="listing-title">نيسان صني 2022</h4>
+                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حمص</p>
+                            <p class="listing-price">13,500,000 ل.س</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">سوريا للبيع</span>
+                    </a>
+                    <p>منصة الإعلانات المبوبة الأولى في سوريا</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                            <li><a href="terms.html">شروط الاستخدام</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>الأقسام</h4>
+                        <ul>
+                            <li><a href="category.html?cat=cars">سيارات</a></li>
+                            <li><a href="category.html?cat=electronics">إلكترونيات</a></li>
+                            <li><a href="category.html?cat=jobs">وظائف</a></li>
+                            <li><a href="category.html?cat=properties">عقارات</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>حسابي</h4>
+                        <ul>
+                            <li><a href="login.html">تسجيل الدخول</a></li>
+                            <li><a href="register.html">إنشاء حساب</a></li>
+                            <li><a href="profile.html">الملف الشخصي</a></li>
+                            <li><a href="my-ads.html">إعلاناتي</a></li>
+                            <li><a href="favorites.html">المفضلة</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>تواصل معنا</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> دمشق، سوريا</li>
+                            <li><i class="fas fa-phone"></i> +963 11 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> info@sy4sale.com</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 سوريا للبيع. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Image gallery functionality
+        function changeImage(thumbnail, imageUrl) {
+            // Update main image
+            document.getElementById('main-ad-image').src = imageUrl;
+            
+            // Update active thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            thumbnail.classList.add('active');
+        }
+
+        // Favorite button toggle
+        const favoriteBtn = document.querySelector('.favorite-btn');
+        if (favoriteBtn) {
+            favoriteBtn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    this.classList.add('favorited');
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    this.classList.remove('favorited');
+                }
+            });
+        }
+
+        // Share functionality
+        const shareBtn = document.querySelector('.share-btn');
+        if (shareBtn) {
+            shareBtn.addEventListener('click', function() {
+                // Create a temporary input to copy the URL
+                const tempInput = document.createElement('input');
+                tempInput.value = window.location.href;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+                
+                // Show copied message
+                alert('تم نسخ رابط الإعلان!');
+            });
+        }
+    </script>
+</body>
+</html>

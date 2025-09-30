@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيارات - سوريا للبيع</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="sticky-header-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-text">سوريا للبيع</span>
+                        </a>
+                    </div>
+                    
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن أي شيء...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
+                        <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                        <a href="register.html" class="btn btn-outline">إنشاء حساب</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="cars.html">سيارات</a></li>
+                    <li><a href="new-cars.html">سيارات جديدة</a></li>
+                    <li><a href="used-cars.html">سيارات مستعملة</a></li>
+                    <li><a href="automotive-categories.html">فئات السيارات</a></li>
+                    <li><a href="real-estate.html">عقارات</a></li>
+                    <li><a href="electronics.html">إلكترونيات</a></li>
+                    <li><a href="jobs.html">وظائف</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li>سيارات</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <div class="category-info">
+                <div class="category-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="category-details">
+                    <h1>سيارات</h1>
+                    <p>تصفح أحدث إعلانات السيارات في سوريا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-filter-wrapper">
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن سيارات...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <!-- Filter Toggle Button (Mobile) -->
+                <button class="filter-toggle">
+                    <i class="fas fa-filter"></i> الفلاتر
+                </button>
+            </div>
+            
+            <!-- Advanced Filters -->
+            <div class="advanced-filters">
+                <div class="filter-section">
+                    <h3>الماركة</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="toyota">
+                            <span class="checkmark"></span>
+                            تويوتا
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="honda">
+                            <span class="checkmark"></span>
+                            هوندا
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="hyundai">
+                            <span class="checkmark"></span>
+                            هيونداي
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="kia">
+                            <span class="checkmark"></span>
+                            كيا
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="mercedes">
+                            <span class="checkmark"></span>
+                            مرسيدس
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="bmw">
+                            <span class="checkmark"></span>
+                            بي إم دبليو
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>الموديل</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="model" value="2023">
+                            <span class="checkmark"></span>
+                            2023
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="model" value="2022">
+                            <span class="checkmark"></span>
+                            2022
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="model" value="2021">
+                            <span class="checkmark"></span>
+                            2021
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="model" value="2020">
+                            <span class="checkmark"></span>
+                            2020
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="model" value="2019">
+                            <span class="checkmark"></span>
+                            2019
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="model" value="older">
+                            <span class="checkmark"></span>
+                            أقدم
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>السعر</h3>
+                    <div class="price-range">
+                        <input type="number" placeholder="من" class="price-input">
+                        <span class="price-separator">-</span>
+                        <input type="number" placeholder="إلى" class="price-input">
+                        <button class="price-apply">تطبيق</button>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>الحالة</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="condition" value="new">
+                            <span class="checkmark"></span>
+                            جديد
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="condition" value="used">
+                            <span class="checkmark"></span>
+                            مستعمل
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>ناقل الحركة</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="transmission" value="automatic">
+                            <span class="checkmark"></span>
+                            أوتوماتيك
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="transmission" value="manual">
+                            <span class="checkmark"></span>
+                            عادي
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>نوع الوقود</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="fuel" value="petrol">
+                            <span class="checkmark"></span>
+                            بنزين
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="fuel" value="diesel">
+                            <span class="checkmark"></span>
+                            ديزل
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="fuel" value="hybrid">
+                            <span class="checkmark"></span>
+                            هجين
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="fuel" value="electric">
+                            <span class="checkmark"></span>
+                            كهربائي
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-actions">
+                    <button class="btn btn-primary apply-filters">تطبيق الفلاتر</button>
+                    <button class="btn btn-outline reset-filters">إعادة ضبط</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section class="category-listings">
+        <div class="container">
+            <div class="listings-header">
+                <div class="listings-count">
+                    <span>120 إعلان</span>
+                </div>
+            </div>
+            
+            <div class="listings-grid">
+                <!-- Listing 1 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="سيارة هوندا سيفيك">
+                        <span class="listing-badge">مميز</span>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">سيارة هوندا سيفيك 2020</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 45,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">15,000,000 ل.س</p>
+                        <p class="listing-date">منذ 3 أيام</p>
+                    </div>
+                </div>
+                
+                <!-- Listing 2 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="تويوتا كامري">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">تويوتا كامري 2019</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 60,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">18,000,000 ل.س</p>
+                        <p class="listing-date">منذ 5 أيام</p>
+                    </div>
+                </div>
+                
+                <!-- Listing 3 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="هيونداي النترا">
+                        <span class="listing-badge">مميز</span>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">هيونداي النترا 2021</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حمص</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 30,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">16,500,000 ل.س</p>
+                        <p class="listing-date">منذ يوم واحد</p>
+                    </div>
+                </div>
+                
+                <!-- Listing 4 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="كيا سيراتو">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">كيا سيراتو 2020</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> اللاذقية</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 50,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">14,000,000 ل.س</p>
+                        <p class="listing-date">منذ أسبوع</p>
+                    </div>
+                </div>
+                
+                <!-- Listing 5 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="نيسان صني">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">نيسان صني 2022</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> طرطوس</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 15,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">13,500,000 ل.س</p>
+                        <p class="listing-date">منذ 4 أيام</p>
+                    </div>
+                </div>
+                
+                <!-- Listing 6 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="مرسيدس C200">
+                        <span class="listing-badge">مميز</span>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">مرسيدس C200 2018</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 70,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">25,000,000 ل.س</p>
+                        <p class="listing-date">منذ 10 أيام</p>
+                    </div>
+                </div>
+                
+                <!-- Listing 7 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="بي إم دبليو 320i">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">بي إم دبليو 320i 2019</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 55,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">22,000,000 ل.س</p>
+                        <p class="listing-date">منذ أسبوعين</p>
+                    </div>
+                </div>
+                
+                <!-- Listing 8 -->
+                <div class="listing-card">
+                    <div class="listing-img">
+                        <img src="https://via.placeholder.com/300x200" alt="تويوتا كورولا">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title"><a href="ad-details.html">تويوتا كورولا 2021</a></h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
+                        <div class="listing-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 25,000 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                            <span><i class="fas fa-cog"></i> أوتوماتيك</span>
+                        </div>
+                        <p class="listing-price">17,000,000 ل.س</p>
+                        <p class="listing-date">منذ 6 أيام</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="prev-page"><i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="next-page"><i class="fas fa-chevron-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">سوريا للبيع</span>
+                    </a>
+                    <p>منصة الإعلانات المبوبة الأولى في سوريا</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                            <li><a href="terms.html">شروط الاستخدام</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>الأقسام</h4>
+                        <ul>
+                            <li><a href="category.html?cat=cars">سيارات</a></li>
+                            <li><a href="category.html?cat=electronics">إلكترونيات</a></li>
+                            <li><a href="category.html?cat=jobs">وظائف</a></li>
+                            <li><a href="category.html?cat=properties">عقارات</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>حسابي</h4>
+                        <ul>
+                            <li><a href="login.html">تسجيل الدخول</a></li>
+                            <li><a href="register.html">إنشاء حساب</a></li>
+                            <li><a href="profile.html">الملف الشخصي</a></li>
+                            <li><a href="my-ads.html">إعلاناتي</a></li>
+                            <li><a href="favorites.html">المفضلة</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>تواصل معنا</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> دمشق، سوريا</li>
+                            <li><i class="fas fa-phone"></i> +963 11 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> info@sy4sale.com</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 سوريا للبيع. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Filter toggle for mobile
+        const filterToggle = document.querySelector('.filter-toggle');
+        const advancedFilters = document.querySelector('.advanced-filters');
+        
+        if (filterToggle) {
+            filterToggle.addEventListener('click', function() {
+                advancedFilters.classList.toggle('show');
+            });
+        }
+        
+        // View toggle (grid/list)
+        const gridViewBtn = document.querySelector('.grid-view');
+        const listViewBtn = document.querySelector('.list-view');
+        const listingsGrid = document.querySelector('.listings-grid');
+        
+        if (gridViewBtn && listViewBtn) {
+            gridViewBtn.addEventListener('click', function() {
+                listingsGrid.classList.remove('list-layout');
+                gridViewBtn.classList.add('active');
+                listViewBtn.classList.remove('active');
+            });
+            
+            listViewBtn.addEventListener('click', function() {
+                listingsGrid.classList.add('list-layout');
+                listViewBtn.classList.add('active');
+                gridViewBtn.classList.remove('active');
+            });
+        }
+        
+        // Favorite button toggle
+        const favoriteButtons = document.querySelectorAll('.favorite-btn');
+        favoriteButtons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    this.classList.add('favorited');
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    this.classList.remove('favorited');
+                }
+            });
+        });
+        
+        // Reset filters
+        const resetFiltersBtn = document.querySelector('.reset-filters');
+        if (resetFiltersBtn) {
+            resetFiltersBtn.addEventListener('click', function() {
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                const priceInputs = document.querySelectorAll('.price-input');
+                
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                
+                priceInputs.forEach(input => {
+                    input.value = '';
+                });
+            });
+        }
+    </script>
+
+    <!-- Floating Controls -->
+    <div class="floating-controls">
+        <div class="floating-control-item">
+            <button class="floating-btn sort-btn" id="sortBtn">
+                <i class="fas fa-sort"></i>
+                <span>ترتيب</span>
+            </button>
+            <div class="floating-dropdown sort-dropdown" id="sortDropdown">
+                <select id="sortSelect">
+                    <option value="newest">الأحدث</option>
+                    <option value="oldest">الأقدم</option>
+                    <option value="price_high">السعر: من الأعلى للأقل</option>
+                    <option value="price_low">السعر: من الأقل للأعلى</option>
+                    <option value="popular">الأكثر مشاهدة</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="floating-control-item">
+            <button class="floating-btn view-btn" id="viewBtn">
+                <i class="fas fa-th-large"></i>
+                <span>عرض</span>
+            </button>
+            <div class="floating-dropdown view-dropdown" id="viewDropdown">
+                <button class="view-option active" data-view="grid">
+                    <i class="fas fa-th-large"></i>
+                    <span>شبكة</span>
+                </button>
+                <button class="view-option" data-view="list">
+                    <i class="fas fa-list"></i>
+                    <span>قائمة</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Floating Controls */
+        .floating-controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-control-item {
+            position: relative;
+        }
+
+        .floating-btn {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3);
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 600;
+            min-width: 100px;
+            justify-content: center;
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 123, 255, 0.4);
+            background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+        }
+
+        .floating-btn i {
+            font-size: 16px;
+        }
+
+        .floating-dropdown {
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e9ecef;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            min-width: 200px;
+            overflow: hidden;
+        }
+
+        .floating-dropdown.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .floating-dropdown select {
+            width: 100%;
+            border: none;
+            padding: 15px;
+            background: white;
+            color: #2c3e50;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+            border-radius: 12px;
+        }
+
+        .floating-dropdown select:focus {
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+        }
+
+        .view-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            border: none;
+            background: white;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .view-option:hover {
+            background: #f8f9fa;
+            color: #007bff;
+        }
+
+        .view-option.active {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+        }
+
+        .view-option i {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .floating-controls {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .floating-btn {
+                padding: 10px 16px;
+                font-size: 13px;
+                min-width: 80px;
+            }
+
+            .floating-dropdown {
+                min-width: 180px;
+            }
+        }
+    </style>
+    
+    <script>
+        // Floating Controls Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortBtn = document.getElementById('sortBtn');
+            const viewBtn = document.getElementById('viewBtn');
+            const sortDropdown = document.getElementById('sortDropdown');
+            const viewDropdown = document.getElementById('viewDropdown');
+            const sortSelect = document.getElementById('sortSelect');
+            const viewOptions = document.querySelectorAll('.view-option');
+
+            // Toggle sort dropdown
+            sortBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                sortDropdown.classList.toggle('show');
+                viewDropdown.classList.remove('show');
+            });
+
+            // Toggle view dropdown
+            viewBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                viewDropdown.classList.toggle('show');
+                sortDropdown.classList.remove('show');
+            });
+
+            // Handle view option selection
+            viewOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    viewOptions.forEach(opt => opt.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const viewType = this.dataset.view;
+                    const listings = document.querySelector('.listings-grid');
+                    
+                    if (viewType === 'list') {
+                        listings.classList.add('list-view');
+                    } else {
+                        listings.classList.remove('list-view');
+                    }
+                    
+                    viewDropdown.classList.remove('show');
+                });
+            });
+
+            // Handle sort selection
+            sortSelect.addEventListener('change', function() {
+                const sortValue = this.value;
+                console.log('Sorting by:', sortValue);
+                sortDropdown.classList.remove('show');
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function() {
+                sortDropdown.classList.remove('show');
+                viewDropdown.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>

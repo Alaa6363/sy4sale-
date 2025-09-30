@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة إعلان جديد - سوريا للبيع</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post-ad.css">
+</head>
+<body>
+    <!-- Sticky Header Container -->
+    <div class="sticky-header-container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="SY4Sale Logo">
+                        </a>
+                    </div>
+                    <div class="header-center">
+                        <div class="search-box">
+                            <input type="text" placeholder="ابحث عن...">
+                            <button type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="post-ad-button">
+                            <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <div class="auth-buttons">
+                            <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="cars.html">سيارات</a></li>
+                    <li><a href="new-cars.html">سيارات جديدة</a></li>
+                    <li><a href="real-estate.html">عقارات</a></li>
+                    <li><a href="electronics.html">إلكترونيات</a></li>
+                    <li><a href="jobs.html">وظائف</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li>إضافة إعلان جديد</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Post Ad Section -->
+    <section class="post-ad-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>إضافة إعلان جديد</h1>
+                <p>أضف إعلانك بسهولة وسرعة واحصل على أفضل النتائج</p>
+            </div>
+            
+            <div class="post-ad-wrapper">
+                <!-- Post Ad Form -->
+                <div class="post-ad-form">
+                    <form id="adForm">
+                        <!-- Category Selection -->
+                        <div class="form-section">
+                            <h3 class="section-title">اختر القسم</h3>
+                            <div class="category-selection">
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-cars" value="cars" checked>
+                                    <label for="cat-cars">
+                                        <i class="fas fa-car"></i>
+                                        <span>سيارات</span>
+                                    </label>
+                                </div>
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-properties" value="properties">
+                                    <label for="cat-properties">
+                                        <i class="fas fa-home"></i>
+                                        <span>عقارات</span>
+                                    </label>
+                                </div>
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-electronics" value="electronics">
+                                    <label for="cat-electronics">
+                                        <i class="fas fa-laptop"></i>
+                                        <span>إلكترونيات</span>
+                                    </label>
+                                </div>
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-jobs" value="jobs">
+                                    <label for="cat-jobs">
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>وظائف</span>
+                                    </label>
+                                </div>
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-furniture" value="furniture">
+                                    <label for="cat-furniture">
+                                        <i class="fas fa-couch"></i>
+                                        <span>أثاث</span>
+                                    </label>
+                                </div>
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-fashion" value="fashion">
+                                    <label for="cat-fashion">
+                                        <i class="fas fa-tshirt"></i>
+                                        <span>موضة</span>
+                                    </label>
+                                </div>
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-services" value="services">
+                                    <label for="cat-services">
+                                        <i class="fas fa-concierge-bell"></i>
+                                        <span>خدمات</span>
+                                    </label>
+                                </div>
+                                <div class="category-option">
+                                    <input type="radio" name="category" id="cat-other" value="other">
+                                    <label for="cat-other">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <span>أخرى</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Ad Details -->
+                        <div class="form-section">
+                            <h3 class="section-title">تفاصيل الإعلان</h3>
+                            
+                            <div class="form-group">
+                                <label for="ad-title">عنوان الإعلان <span class="required">*</span></label>
+                                <input type="text" id="ad-title" name="title" required placeholder="أدخل عنوان الإعلان (مثال: سيارة هوندا سيفيك 2020)">
+                                <div class="form-hint">العنوان يجب أن يكون واضحاً ومختصراً (5-70 حرف)</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="ad-description">وصف الإعلان <span class="required">*</span></label>
+                                <textarea id="ad-description" name="description" rows="6" required placeholder="اكتب وصفاً تفصيلياً للإعلان..."></textarea>
+                                <div class="form-hint">أضف وصفاً مفصلاً يتضمن جميع المعلومات المهمة (100-5000 حرف)</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="ad-price">السعر <span class="required">*</span></label>
+                                <div class="price-input-wrapper">
+                                    <input type="number" id="ad-price" name="price" required placeholder="أدخل السعر">
+                                    <select id="currency" name="currency">
+                                        <option value="SYP">ل.س</option>
+                                        <option value="USD">$</option>
+                                        <option value="EUR">€</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="ad-condition">الحالة</label>
+                                <select id="ad-condition" name="condition">
+                                    <option value="">-- اختر الحالة --</option>
+                                    <option value="new">جديد</option>
+                                    <option value="like-new">كالجديد</option>
+                                    <option value="good">جيدة</option>
+                                    <option value="acceptable">مقبولة</option>
+                                    <option value="damaged">تالف</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Car specific fields (shown when cars category is selected) -->
+                            <div id="car-fields" class="category-specific-fields">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="car-brand">الماركة</label>
+                                        <select id="car-brand" name="car_brand">
+                                            <option value="">-- اختر الماركة --</option>
+                                            <option value="toyota">تويوتا</option>
+                                            <option value="honda">هوندا</option>
+                                            <option value="hyundai">هيونداي</option>
+                                            <option value="kia">كيا</option>
+                                            <option value="mercedes">مرسيدس</option>
+                                            <option value="bmw">بي إم دبليو</option>
+                                            <option value="nissan">نيسان</option>
+                                            <option value="other">أخرى</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="car-model">الموديل</label>
+                                        <input type="text" id="car-model" name="car_model" placeholder="أدخل الموديل">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="car-year">سنة الصنع</label>
+                                        <select id="car-year" name="car_year">
+                                            <option value="">-- اختر السنة --</option>
+                                            <!-- Options will be populated by JavaScript -->
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="car-mileage">عدد الكيلومترات</label>
+                                        <input type="number" id="car-mileage" name="car_mileage" placeholder="أدخل عدد الكيلومترات">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="car-transmission">ناقل الحركة</label>
+                                        <select id="car-transmission" name="car_transmission">
+                                            <option value="">-- اختر نوع ناقل الحركة --</option>
+                                            <option value="automatic">أوتوماتيك</option>
+                                            <option value="manual">عادي</option>
+                                            <option value="cvt">CVT</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="car-fuel">نوع الوقود</label>
+                                        <select id="car-fuel" name="car_fuel">
+                                            <option value="">-- اختر نوع الوقود --</option>
+                                            <option value="petrol">بنزين</option>
+                                            <option value="diesel">ديزل</option>
+                                            <option value="hybrid">هجين</option>
+                                            <option value="electric">كهربائي</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Images Upload -->
+                        <div class="form-section">
+                            <h3 class="section-title">صور الإعلان</h3>
+                            
+                            <div class="image-upload-container">
+                                <div class="image-upload-area">
+                                    <input type="file" id="image-upload" name="images[]" multiple accept="image/*">
+                                    <label for="image-upload" class="upload-label">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span>اسحب الصور هنا أو انقر للاختيار</span>
+                                        <span class="upload-hint">يمكنك رفع حتى 10 صور (الحد الأقصى: 5 ميجابايت لكل صورة)</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="image-preview-container">
+                                    <!-- Image previews will be added here by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Information -->
+                        <div class="form-section">
+                            <h3 class="section-title">معلومات الاتصال</h3>
+                            
+                            <div class="form-group">
+                                <label for="contact-name">الاسم <span class="required">*</span></label>
+                                <input type="text" id="contact-name" name="contact_name" required placeholder="أدخل اسمك">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-phone">رقم الهاتف <span class="required">*</span></label>
+                                    <input type="tel" id="contact-phone" name="contact_phone" required placeholder="أدخل رقم الهاتف">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-email">البريد الإلكتروني</label>
+                                    <input type="email" id="contact-email" name="contact_email" placeholder="أدخل البريد الإلكتروني">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-location">الموقع <span class="required">*</span></label>
+                                <select id="contact-location" name="location" required>
+                                    <option value="">-- اختر المدينة --</option>
+                                    <option value="damascus">دمشق</option>
+                                    <option value="aleppo">حلب</option>
+                                    <option value="homs">حمص</option>
+                                    <option value="latakia">اللاذقية</option>
+                                    <option value="tartus">طرطوس</option>
+                                    <option value="hama">حماة</option>
+                                    <option value="deir-ez-zor">دير الزور</option>
+                                    <option value="raqqa">الرقة</option>
+                                    <option value="hasaka">الحسكة</option>
+                                    <option value="daraa">درعا</option>
+                                    <option value="idlib">إدلب</option>
+                                    <option value="quneitra">القنيطرة</option>
+                                    <option value="suwayda">السويداء</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-address">العنوان التفصيلي</label>
+                                <input type="text" id="contact-address" name="address" placeholder="أدخل العنوان التفصيلي (اختياري)">
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="hide_phone" id="hide-phone">
+                                    <span class="checkbox-custom"></span>
+                                    إخفاء رقم الهاتف في الإعلان
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Ad Options -->
+                        <div class="form-section">
+                            <h3 class="section-title">خيارات الإعلان</h3>
+                            
+                            <div class="ad-options">
+                                <div class="option-card">
+                                    <div class="option-header">
+                                        <h4>إعلان عادي</h4>
+                                        <div class="option-price">مجاني</div>
+                                    </div>
+                                    <div class="option-features">
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> نشر لمدة 30 يوم</li>
+                                            <li><i class="fas fa-check"></i> ظهور في نتائج البحث</li>
+                                            <li><i class="fas fa-times"></i> ميزة الإعلان المميز</li>
+                                            <li><i class="fas fa-times"></i> ظهور في الصفحة الرئيسية</li>
+                                        </ul>
+                                    </div>
+                                    <div class="option-select">
+                                        <label class="radio-label">
+                                            <input type="radio" name="ad_type" value="regular" checked>
+                                            <span class="radio-custom"></span>
+                                            اختيار
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="option-card featured">
+                                    <div class="option-badge">موصى به</div>
+                                    <div class="option-header">
+                                        <h4>إعلان مميز</h4>
+                                        <div class="option-price">5,000 ل.س</div>
+                                    </div>
+                                    <div class="option-features">
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> نشر لمدة 30 يوم</li>
+                                            <li><i class="fas fa-check"></i> ظهور في نتائج البحث</li>
+                                            <li><i class="fas fa-check"></i> ميزة الإعلان المميز</li>
+                                            <li><i class="fas fa-check"></i> ظهور في الصفحة الرئيسية</li>
+                                        </ul>
+                                    </div>
+                                    <div class="option-select">
+                                        <label class="radio-label">
+                                            <input type="radio" name="ad_type" value="featured">
+                                            <span class="radio-custom"></span>
+                                            اختيار
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="option-card premium">
+                                    <div class="option-header">
+                                        <h4>إعلان مميز جداً</h4>
+                                        <div class="option-price">10,000 ل.س</div>
+                                    </div>
+                                    <div class="option-features">
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> نشر لمدة 60 يوم</li>
+                                            <li><i class="fas fa-check"></i> ظهور في نتائج البحث</li>
+                                            <li><i class="fas fa-check"></i> ميزة الإعلان المميز</li>
+                                            <li><i class="fas fa-check"></i> ظهور في أعلى الصفحة الرئيسية</li>
+                                            <li><i class="fas fa-check"></i> ظهور في الإشعارات</li>
+                                        </ul>
+                                    </div>
+                                    <div class="option-select">
+                                        <label class="radio-label">
+                                            <input type="radio" name="ad_type" value="premium">
+                                            <span class="radio-custom"></span>
+                                            اختيار
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Terms and Submit -->
+                        <div class="form-section">
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <span class="checkbox-custom"></span>
+                                    أوافق على <a href="terms.html">شروط الاستخدام</a> و <a href="privacy.html">سياسة الخصوصية</a>
+                                </label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-lg">نشر الإعلان</button>
+                                <button type="reset" class="btn btn-outline">إعادة ضبط</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="post-ad-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>نصائح لإعلان ناجح</h3>
+                        <ul class="tips-list">
+                            <li><i class="fas fa-check-circle"></i> استخدم عنواناً واضحاً ومختصراً</li>
+                            <li><i class="fas fa-check-circle"></i> أضف صوراً واضحة وبجودة عالية</li>
+                            <li><i class="fas fa-check-circle"></i> اكتب وصفاً تفصيلياً يتضمن جميع المعلومات المهمة</li>
+                            <li><i class="fas fa-check-circle"></i> حدد سعراً منطقياً ومناسباً للسوق</li>
+                            <li><i class="fas fa-check-circle"></i> اختر القسم المناسب لإعلانك</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>لماذا تختار سوريا للبيع؟</h3>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>جمهور واسع</h4>
+                                    <p>يصل إعلانك إلى آلاف المستخدمين يومياً</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>نشر سريع</h4>
+                                    <p>يتم نشر إعلانك فوراً بعد المراجعة</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>بيئة آمنة</h4>
+                                    <p>نراقب الإعلانات لضمان تجربة آمنة للجميع</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>دعم فني</h4>
+                                    <p>فريق دعم جاهز لمساعدتك في أي وقت</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">سوريا للبيع</span>
+                    </a>
+                    <p>منصة الإعلانات المبوبة الأولى في سوريا</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                            <li><a href="terms.html">شروط الاستخدام</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>الأقسام</h4>
+                        <ul>
+                            <li><a href="category.html?cat=cars">سيارات</a></li>
+                            <li><a href="category.html?cat=electronics">إلكترونيات</a></li>
+                            <li><a href="category.html?cat=jobs">وظائف</a></li>
+                            <li><a href="category.html?cat=properties">عقارات</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>حسابي</h4>
+                        <ul>
+                            <li><a href="login.html">تسجيل الدخول</a></li>
+                            <li><a href="register.html">إنشاء حساب</a></li>
+                            <li><a href="profile.html">الملف الشخصي</a></li>
+                            <li><a href="my-ads.html">إعلاناتي</a></li>
+                            <li><a href="favorites.html">المفضلة</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>تواصل معنا</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> دمشق، سوريا</li>
+                            <li><i class="fas fa-phone"></i> +963 11 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> info@sy4sale.com</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 سوريا للبيع. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Populate year dropdown for cars
+        const yearSelect = document.getElementById('car-year');
+        if (yearSelect) {
+            const currentYear = new Date().getFullYear();
+            for (let year = currentYear; year >= 1990; year--) {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            }
+        }
+        
+        // Category specific fields toggle
+        const categoryRadios = document.querySelectorAll('input[name="category"]');
+        const carFields = document.getElementById('car-fields');
+        
+        categoryRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'cars') {
+                    carFields.style.display = 'block';
+                } else {
+                    carFields.style.display = 'none';
+                }
+            });
+        });
+        
+        // Image upload preview
+        const imageUpload = document.getElementById('image-upload');
+        const imagePreviewContainer = document.querySelector('.image-preview-container');
+        
+        if (imageUpload) {
+            imageUpload.addEventListener('change', function() {
+                imagePreviewContainer.innerHTML = '';
+                
+                if (this.files.length > 10) {
+                    alert('يمكنك رفع 10 صور كحد أقصى');
+                    this.value = '';
+                    return;
+                }
+                
+                for (let i = 0; i < this.files.length; i++) {
+                    const file = this.files[i];
+                    
+                    if (file.size > 5 * 1024 * 1024) {
+                        alert('حجم الصورة يجب أن لا يتجاوز 5 ميجابايت');
+                        this.value = '';
+                        imagePreviewContainer.innerHTML = '';
+                        return;
+                    }
+                    
+                    if (!file.type.match('image.*')) {
+                        continue;
+                    }
+                    
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        const previewItem = document.createElement('div');
+                        previewItem.className = 'preview-item';
+                        
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.className = 'preview-image';
+                        
+                        const removeBtn = document.createElement('button');
+                        removeBtn.className = 'remove-image';
+                        removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+                        removeBtn.addEventListener('click', function() {
+                            previewItem.remove();
+                        });
+                        
+                        previewItem.appendChild(img);
+                        previewItem.appendChild(removeBtn);
+                        imagePreviewContainer.appendChild(previewItem);
+                    };
+                    
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+        
+        // Form validation
+        const adForm = document.getElementById('adForm');
+        
+        if (adForm) {
+            adForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic validation
+                const title = document.getElementById('ad-title').value;
+                const description = document.getElementById('ad-description').value;
+                const price = document.getElementById('ad-price').value;
+                const contactName = document.getElementById('contact-name').value;
+                const contactPhone = document.getElementById('contact-phone').value;
+                const location = document.getElementById('contact-location').value;
+                const terms = document.getElementById('terms').checked;
+                
+                if (!title || !description || !price || !contactName || !contactPhone || !location || !terms) {
+                    alert('يرجى ملء جميع الحقول المطلوبة');
+                    return;
+                }
+                
+                // Simulate form submission
+                alert('تم إرسال الإعلان بنجاح! سيتم مراجعته ونشره قريباً.');
+                
+                // Reset form
+                this.reset();
+                imagePreviewContainer.innerHTML = '';
+            });
+        }
+    </script>
+</body>
+</html>

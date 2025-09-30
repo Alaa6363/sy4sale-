@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيارات جديدة للبيع - SY4Sale</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-cars.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Header Container -->
+    <div class="sticky-header-container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="SY4Sale Logo">
+                        </a>
+                    </div>
+                    <div class="header-center">
+                        <div class="search-box">
+                            <input type="text" placeholder="ابحث عن...">
+                            <button type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="post-ad-button">
+                            <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <div class="auth-buttons">
+                            <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="cars.html">سيارات</a></li>
+                    <li class="active"><a href="new-cars.html">سيارات جديدة</a></li>
+                    <li><a href="real-estate.html">عقارات</a></li>
+                    <li><a href="electronics.html">إلكترونيات</a></li>
+                    <li><a href="jobs.html">وظائف</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>الماركة</label>
+                    <select id="brandFilter" class="filter-select">
+                        <option value="">جميع الماركات</option>
+                        <!-- Brands will be populated dynamically based on hasNewCars -->
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>النوع</label>
+                    <select id="typeFilter" class="filter-select">
+                        <option value="">جميع الأنواع</option>
+                        <option value="sedan">سيدان</option>
+                        <option value="suv">SUV</option>
+                        <option value="hatchback">هاتشباك</option>
+                        <option value="coupe">كوبيه</option>
+                        <option value="pickup">بيك أب</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>السعر</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="">جميع الأسعار</option>
+                        <option value="0-50000">أقل من 50,000</option>
+                        <option value="50000-100000">50,000 - 100,000</option>
+                        <option value="100000-200000">100,000 - 200,000</option>
+                        <option value="200000+">أكثر من 200,000</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>سنة الصنع</label>
+                    <select id="yearFilter" class="filter-select">
+                        <option value="">جميع السنوات</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+                
+                <button class="filter-reset-btn" id="resetFilters">
+                    <i class="fas fa-undo"></i>
+                    إعادة تعيين
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Showcase (Only shown if hasNewCars = true) -->
+    <section class="brands-section" id="brandsSection" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">تصفح حسب الماركة</h2>
+            <div class="brands-grid" id="brandsGrid">
+                <!-- Brands will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Listing -->
+    <section class="cars-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">السيارات الجديدة المتاحة</h2>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="cars-grid" id="carsGrid">
+                <!-- Cars will be populated dynamically -->
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-car"></i>
+                <h3>لا توجد سيارات متاحة</h3>
+                <p>لم نجد أي سيارات تطابق معايير البحث الخاصة بك</p>
+                <button class="btn btn-primary" onclick="resetAllFilters()">إعادة تعيين البحث</button>
+            </div>
+            
+            <!-- Loading -->
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>جاري التحميل...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>لديك سيارة جديدة للبيع؟</h2>
+                <p>انشر إعلانك مجاناً واصل إلى آلاف المشترين المهتمين</p>
+                <a href="post-ad.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-plus"></i>
+                    أضف إعلانك الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SY4Sale</h2>
+                    <p>منصة الإعلانات المبوبة الأولى في سوريا</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="cars.html">سيارات</a></li>
+                            <li><a href="real-estate.html">عقارات</a></li>
+                            <li><a href="electronics.html">إلكترونيات</a></li>
+                            <li><a href="jobs.html">وظائف</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>عن الموقع</h4>
+                        <ul>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>تواصل معنا</h4>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SY4Sale. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/new-cars.js"></script>
+</body>
+</html>

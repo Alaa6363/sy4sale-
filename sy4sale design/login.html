@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - SY4Sale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <!-- Sticky Header Container -->
+    <div class="sticky-header-container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="SY4Sale Logo">
+                        </a>
+                    </div>
+                    <div class="header-center">
+                        <div class="search-box">
+                            <input type="text" placeholder="ابحث عن...">
+                            <button type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="post-ad-button">
+                            <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <div class="auth-buttons">
+                            <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="cars.html">سيارات</a></li>
+                    <li><a href="new-cars.html">سيارات جديدة</a></li>
+                    <li><a href="real-estate.html">عقارات</a></li>
+                    <li><a href="electronics.html">إلكترونيات</a></li>
+                    <li><a href="jobs.html">وظائف</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li>تسجيل الدخول</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Auth Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-wrapper">
+                <div class="auth-content">
+                    <div class="auth-header">
+                        <h1>تسجيل الدخول</h1>
+                        <p>مرحباً بعودتك! قم بتسجيل الدخول للوصول إلى حسابك</p>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>تسجيل الدخول باستخدام فيسبوك</span>
+                        </button>
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>تسجيل الدخول باستخدام جوجل</span>
+                        </button>
+                    </div>
+                    
+                    <div class="divider">
+                        <span>أو</span>
+                    </div>
+                    
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">كلمة المرور</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" placeholder="أدخل كلمة المرور">
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">تذكرني</label>
+                            </div>
+                            <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">تسجيل الدخول</button>
+                    </form>
+                    
+                    <div class="auth-footer">
+                        <p>ليس لديك حساب؟ <a href="register.html">إنشاء حساب جديد</a></p>
+                    </div>
+                </div>
+                
+                <div class="auth-sidebar">
+                    <div class="auth-sidebar-content">
+                        <h2>مرحباً بك في SY4Sale</h2>
+                        <p>المنصة الرائدة للإعلانات المبوبة في سوريا</p>
+                        
+                        <div class="benefits">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>نشر إعلانات مجانية</h3>
+                                    <p>يمكنك نشر إعلاناتك بشكل مجاني وسهل</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>وصول أكبر</h3>
+                                    <p>الوصول إلى آلاف المشترين المحتملين</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>تجربة آمنة</h3>
+                                    <p>نظام متكامل لحماية المستخدمين والمعاملات</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <img src="images/logo.png" alt="SY4Sale Logo" class="footer-logo">
+                    <p>SY4Sale هي منصة إعلانات مبوبة رائدة في سوريا، تتيح للمستخدمين نشر وتصفح الإعلانات بسهولة وأمان.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="category.html">جميع الإعلانات</a></li>
+                        <li><a href="post-ad.html">نشر إعلان</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>الفئات</h3>
+                    <ul>
+                        <li><a href="#">سيارات</a></li>
+                        <li><a href="#">عقارات</a></li>
+                        <li><a href="#">إلكترونيات</a></li>
+                        <li><a href="#">وظائف</a></li>
+                        <li><a href="#">خدمات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> دمشق، سوريا</p>
+                    <p><i class="fas fa-phone-alt"></i> +963 11 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sy4sale.com</p>
+                    <div class="app-download">
+                        <a href="#"><img src="images/app-store.png" alt="App Store"></a>
+                        <a href="#"><img src="images/google-play.png" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SY4Sale. جميع الحقوق محفوظة.</p>
+                <ul>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">شروط الاستخدام</a></li>
+                    <li><a href="#">سياسة ملفات تعريف الارتباط</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Toggle password visibility
+        document.querySelector('.toggle-password').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيارات مستعملة للبيع - SY4Sale</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/used-cars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Header Container -->
+    <div class="sticky-header-container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="SY4Sale Logo">
+                        </a>
+                    </div>
+                    <div class="header-center">
+                        <div class="search-box">
+                            <input type="text" placeholder="ابحث عن...">
+                            <button type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="post-ad-button">
+                            <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <div class="auth-buttons">
+                            <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="cars.html">سيارات</a></li>
+                <li><a href="new-cars.html">سيارات جديدة</a></li>
+                <li><a href="real-estate.html">عقارات</a></li>
+                    <li><a href="electronics.html">إلكترونيات</a></li>
+                     <li><a href="jobs.html">وظائف</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">الرئيسية</a>
+                <span class="separator">/</span>
+                <a href="category.html">السيارات</a>
+                <span class="separator">/</span>
+                <span class="current">سيارات مستعملة</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>سيارات مستعملة للبيع في سوريا</h1>
+            <p>اكتشف أفضل السيارات المستعملة في سوريا بأسعار مناسبة</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <!-- Sticky Filter Header -->
+                    <div class="filters-header">
+                        <h3><i class="fas fa-sliders-h"></i> تصفية النتائج</h3>
+                        <button class="clear-filters"><i class="fas fa-refresh"></i> إعادة تعيين</button>
+                    </div>
+
+                    <!-- Scrollable Filters Content -->
+                    <div class="filters-content">
+                        <!-- Featured Quick Filters -->
+                    <div class="featured-filters">
+                        <div class="featured-tag new-featured" data-filter="new">
+                            <i class="fas fa-star"></i>
+                            <span>جديد مميز</span>
+                        </div>
+                        <div class="featured-tag popular-featured" data-filter="popular">
+                            <i class="fas fa-fire"></i>
+                            <span>الأكثر طلباً</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Access Filters -->
+                    <div class="quick-access">
+                        <h4>فلاتر سريعة</h4>
+                        <div class="quick-pills">
+                            <button class="pill-btn" data-filter="low-mileage">
+                                <i class="fas fa-tachometer-alt"></i>
+                                مسافة قليلة
+                            </button>
+                            <button class="pill-btn" data-filter="automatic">
+                                <i class="fas fa-cog"></i>
+                                أوتوماتيك
+                            </button>
+                            <button class="pill-btn" data-filter="under-10m">
+                                <i class="fas fa-tag"></i>
+                                أقل من 10 مليون
+                            </button>
+                            <button class="pill-btn" data-filter="recent">
+                                <i class="fas fa-clock"></i>
+                                حديث
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Price Range -->
+                    <div class="filter-section">
+                        <h4><i class="fas fa-money-bill-wave"></i> نطاق السعر</h4>
+                        <div class="price-range">
+                            <div class="price-input-group">
+                                <input type="text" class="price-input" placeholder="0">
+                                <input type="text" class="price-input" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brand Selection -->
+                    <div class="filter-section">
+                        <h4><i class="fas fa-car-side"></i> الماركة</h4>
+                        <div class="brand-selector">
+                            <div class="popular-brands">
+                                <label class="brand-chip">
+                                    <input type="checkbox" value="toyota">
+                                    <span class="chip-content">
+                                        <span class="brand-name">تويوتا</span>
+                                        <span class="brand-count">45</span>
+                                    </span>
+                                </label>
+                                <label class="brand-chip">
+                                    <input type="checkbox" value="honda">
+                                    <span class="chip-content">
+                                        <span class="brand-name">هوندا</span>
+                                        <span class="brand-count">32</span>
+                                    </span>
+                                </label>
+                                <label class="brand-chip">
+                                    <input type="checkbox" value="nissan">
+                                    <span class="chip-content">
+                                        <span class="brand-name">نيسان</span>
+                                        <span class="brand-count">28</span>
+                                    </span>
+                                </label>
+                                <label class="brand-chip">
+                                    <input type="checkbox" value="hyundai">
+                                    <span class="chip-content">
+                                        <span class="brand-name">هيونداي</span>
+                                        <span class="brand-count">24</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <button class="expand-brands">عرض جميع الماركات <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Year & Mileage -->
+                    <div class="filter-section">
+                        <h4><i class="fas fa-calendar-check"></i> السنة والمسافة</h4>
+                        <div class="year-mileage">
+                            <div class="input-row">
+                                <select class="modern-select">
+                                    <option value="">من سنة</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                                <select class="modern-select">
+                                    <option value="">إلى سنة</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                            <div class="mileage-chips">
+                                <label class="mileage-chip">
+                                    <input type="radio" name="mileage" value="0-50000">
+                                    <span class="chip-text">أقل من 50 ألف</span>
+                                </label>
+                                <label class="mileage-chip">
+                                    <input type="radio" name="mileage" value="50000-100000">
+                                    <span class="chip-text">50-100 ألف</span>
+                                </label>
+                                <label class="mileage-chip">
+                                    <input type="radio" name="mileage" value="100000+">
+                                    <span class="chip-text">أكثر من 100 ألف</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Location Filter -->
+                    <div class="filter-section">
+                        <h4><i class="fas fa-map-marker-alt"></i> المحافظة</h4>
+                        <select class="modern-select">
+                            <option value="">جميع المحافظات</option>
+                            <option value="damascus">دمشق</option>
+                            <option value="aleppo">حلب</option>
+                            <option value="homs">حمص</option>
+                            <option value="lattakia">اللاذقية</option>
+                            <option value="tartous">طرطوس</option>
+                        </select>
+                    </div>
+                    </div>
+
+                    <!-- Apply Button -->
+                    <div class="filter-apply">
+                        <button class="apply-btn">
+                            <i class="fas fa-search"></i>
+                            <span class="apply-btn-text">عرض النتائج</span>
+                            <span class="results-count">(247)</span>
+                        </button>
+                        <div class="active-filters">
+                            <span class="active-count">0</span> فلتر نشط
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Listings -->
+                <div class="listings-main">
+                    <!-- Listings Header -->
+                    <div class="listings-header">
+                        <div class="results-info">
+                            <h2>سيارات مستعملة (247 إعلان)</h2>
+                        </div>
+                    </div>
+
+                    <!-- Car Listings Grid -->
+                    <div class="cars-grid">
+                        <!-- Car Card 1 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/4a90e2/ffffff?text=Toyota+Camry" alt="تويوتا كامري 2020">
+                                <div class="car-badge">مميز</div>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">تويوتا كامري 2020 - فل كامل</h3>
+                                <div class="car-price">15,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 45,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، المزة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 2 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Honda+Civic" alt="هوندا سيفيك 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">هوندا سيفيك 2019 - نظيفة جداً</h3>
+                                <div class="car-price">12,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 62,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، الشهباء
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 3 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Nissan+Altima" alt="نيسان التيما 2021">
+                                <div class="car-badge">جديد</div>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">نيسان التيما 2021 - وكالة سوريا</h3>
+                                <div class="car-price">16,200,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2021</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 28,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، المزة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 4 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=Hyundai+Elantra" alt="هيونداي إلنترا 2018">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">هيونداي إلنترا 2018 - اقتصادية</h3>
+                                <div class="car-price">8,900,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2018</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 78,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> يدوي</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حمص، الخالدية
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 5 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/f39c12/ffffff?text=Kia+Cerato" alt="كيا سيراتو 2020">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">كيا سيراتو 2020 - حالة ممتازة</h3>
+                                <div class="car-price">11,900,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 35,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، الشهباء
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 6 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/1abc9c/ffffff?text=Mazda+6" alt="مازدا 6 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">مازدا 6 2019 - فل أوبشن</h3>
+                                <div class="car-price">14,300,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 52,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اللاذقية، الرمل الجنوبي
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 7 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e67e22/ffffff?text=BMW+X3" alt="بي إم دبليو X3 2021">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">بي إم دبليو X3 2021 - فل كامل</h3>
+                                <div class="car-price">28,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2021</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 25,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، أبو رمانة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 8 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/8e44ad/ffffff?text=Mercedes+C200" alt="مرسيدس C200 2020">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">مرسيدس C200 2020 - ممتازة</h3>
+                                <div class="car-price">22,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 35,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، الفرقان
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 9 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/27ae60/ffffff?text=Audi+A4" alt="أودي A4 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">أودي A4 2019 - حالة ممتازة</h3>
+                                <div class="car-price">19,200,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 48,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، المالكي
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 10 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Volkswagen+Golf" alt="فولكس واجن جولف 2018">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">فولكس واجن جولف 2018 - اقتصادية</h3>
+                                <div class="car-price">11,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2018</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 65,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> يدوي</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حمص، الوعر
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 11 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Lexus+ES" alt="لكزس ES 2020">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">لكزس ES 2020 - فاخرة</h3>
+                                <div class="car-price">32,000,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 28,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، المهاجرين
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 12 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/f39c12/ffffff?text=Chevrolet+Cruze" alt="شيفروليه كروز 2017">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">شيفروليه كروز 2017 - نظيفة</h3>
+                                <div class="car-price">7,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2017</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 85,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، الحمدانية
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 13 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=Ford+Focus" alt="فورد فوكس 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">فورد فوكس 2019 - حالة جيدة</h3>
+                                <div class="car-price">10,200,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 55,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اللاذقية، الصليبة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 14 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/1abc9c/ffffff?text=Peugeot+308" alt="بيجو 308 2018">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">بيجو 308 2018 - اقتصادية</h3>
+                                <div class="car-price">9,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2018</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 72,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> يدوي</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    طرطوس، الكورنيش
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 15 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e67e22/ffffff?text=Infiniti+Q50" alt="إنفينيتي Q50 2020">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">إنفينيتي Q50 2020 - رياضية</h3>
+                                <div class="car-price">25,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 32,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، كفر سوسة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 16 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/34495e/ffffff?text=Subaru+Outback" alt="سوبارو أوتباك 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">سوبارو أوتباك 2019 - دفع رباعي</h3>
+                                <div class="car-price">18,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 42,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، العزيزية
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 17 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Mitsubishi+Lancer" alt="ميتسوبيشي لانسر 2017">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">ميتسوبيشي لانسر 2017 - موثوقة</h3>
+                                <div class="car-price">8,200,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2017</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 78,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> يدوي</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حمص، الغوطة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 18 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Skoda+Octavia" alt="سكودا أوكتافيا 2018">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">سكودا أوكتافيا 2018 - واسعة</h3>
+                                <div class="car-price">12,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2018</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 58,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، التجارة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 19 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/f39c12/ffffff?text=Renault+Megane" alt="رينو ميجان 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">رينو ميجان 2019 - أنيقة</h3>
+                                <div class="car-price">11,200,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 46,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اللاذقية، الشاطئ الأزرق
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 20 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=Acura+TLX" alt="أكورا TLX 2020">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">أكورا TLX 2020 - متطورة</h3>
+                                <div class="car-price">24,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 29,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، الشعلان
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 21 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/1abc9c/ffffff?text=Seat+Leon" alt="سيات ليون 2018">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">سيات ليون 2018 - رياضية</h3>
+                                <div class="car-price">10,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2018</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 62,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> يدوي</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، الجميلية
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 22 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e67e22/ffffff?text=Cadillac+ATS" alt="كاديلاك ATS 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">كاديلاك ATS 2019 - فاخرة</h3>
+                                <div class="car-price">26,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 38,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    طرطوس، المشتل
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 23 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Volvo+S60" alt="فولفو S60 2020">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">فولفو S60 2020 - آمنة</h3>
+                                <div class="car-price">27,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 31,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، الروضة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 24 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Jaguar+XE" alt="جاكوار XE 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">جاكوار XE 2019 - أنيقة</h3>
+                                <div class="car-price">29,200,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 35,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، المحافظة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 25 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/27ae60/ffffff?text=Genesis+G70" alt="جينيسيس G70 2020">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">جينيسيس G70 2020 - حديثة</h3>
+                                <div class="car-price">31,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 22,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، القصاع
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 26 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/8e44ad/ffffff?text=Alfa+Romeo+Giulia" alt="ألفا روميو جوليا 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">ألفا روميو جوليا 2019 - إيطالية</h3>
+                                <div class="car-price">23,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 41,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اللاذقية، الزراعة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 27 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/f39c12/ffffff?text=Lincoln+MKZ" alt="لينكولن MKZ 2018">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">لينكولن MKZ 2018 - مريحة</h3>
+                                <div class="car-price">21,200,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2018</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 52,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حمص، الإنشاءات
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 28 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Buick+Regal" alt="بويك ريجال 2019">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">بويك ريجال 2019 - هادئة</h3>
+                                <div class="car-price">17,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2019</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 44,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    طرطوس، الثورة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 29 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/34495e/ffffff?text=Chrysler+300" alt="كرايسلر 300 2018">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">كرايسلر 300 2018 - قوية</h3>
+                                <div class="car-price">16,500,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2018</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 68,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    دمشق، برزة
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Card 30 -->
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="https://via.placeholder.com/300x200/e67e22/ffffff?text=Pontiac+G6" alt="بونتياك G6 2017">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="car-content">
+                                <h3 class="car-title">بونتياك G6 2017 - عملية</h3>
+                                <div class="car-price">9,800,000 ل.س</div>
+                                <div class="car-specs">
+                                    <span><i class="fas fa-calendar"></i> 2017</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 82,000 كم</span>
+                                    <span><i class="fas fa-cogs"></i> أوتوماتيك</span>
+                                </div>
+                                <div class="car-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    حلب، الصاخور
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn prev" disabled>السابق</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <span class="page-dots">...</span>
+                        <button class="page-btn">12</button>
+                        <button class="page-btn next">التالي</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Car Information Section -->
+    <section class="car-info-section">
+        <div class="container">
+            <div class="info-header">
+                <h2><i class="fas fa-info-circle"></i> دليل شراء السيارات المستعملة في سوريا</h2>
+                <p>كل ما تحتاج معرفته قبل شراء سيارتك القادمة</p>
+            </div>
+            
+            <div class="info-grid">
+                <!-- Buying Tips -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>نصائح الشراء</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> تحقق من تاريخ الصيانة والخدمة</li>
+                        <li><i class="fas fa-check"></i> افحص المحرك والناقل بعناية</li>
+                        <li><i class="fas fa-check"></i> تأكد من سلامة الهيكل والطلاء</li>
+                        <li><i class="fas fa-check"></i> اطلب تجربة قيادة شاملة</li>
+                        <li><i class="fas fa-check"></i> راجع الأوراق والتأمين</li>
+                    </ul>
+                </div>
+
+                <!-- Popular Brands -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>الماركات الأكثر طلباً</h3>
+                    <div class="brand-stats">
+                        <div class="brand-stat">
+                            <span class="brand">تويوتا</span>
+                            <span class="percentage">35%</span>
+                        </div>
+                        <div class="brand-stat">
+                            <span class="brand">هوندا</span>
+                            <span class="percentage">22%</span>
+                        </div>
+                        <div class="brand-stat">
+                            <span class="brand">نيسان</span>
+                            <span class="percentage">18%</span>
+                        </div>
+                        <div class="brand-stat">
+                            <span class="brand">هيونداي</span>
+                            <span class="percentage">15%</span>
+                        </div>
+                        <div class="brand-stat">
+                            <span class="brand">أخرى</span>
+                            <span class="percentage">10%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Price Ranges -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>متوسط الأسعار</h3>
+                    <div class="price-ranges">
+                        <div class="price-range">
+                            <span class="year">2020-2024</span>
+                            <span class="price">15-25 مليون ل.س</span>
+                        </div>
+                        <div class="price-range">
+                            <span class="year">2015-2019</span>
+                            <span class="price">8-15 مليون ل.س</span>
+                        </div>
+                        <div class="price-range">
+                            <span class="year">2010-2014</span>
+                            <span class="price">4-8 مليون ل.س</span>
+                        </div>
+                        <div class="price-range">
+                            <span class="year">2005-2009</span>
+                            <span class="price">2-4 مليون ل.س</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Trends -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-trending-up"></i>
+                    </div>
+                    <h3>اتجاهات السوق</h3>
+                    <div class="trends">
+                        <div class="trend-item">
+                            <i class="fas fa-arrow-up text-success"></i>
+                            <span>ارتفاع الطلب على السيارات الهايبرد</span>
+                        </div>
+                        <div class="trend-item">
+                            <i class="fas fa-arrow-up text-success"></i>
+                            <span>زيادة في أسعار السيارات الحديثة</span>
+                        </div>
+                        <div class="trend-item">
+                            <i class="fas fa-arrow-down text-danger"></i>
+                            <span>انخفاض في أسعار السيارات القديمة</span>
+                        </div>
+                        <div class="trend-item">
+                            <i class="fas fa-arrow-up text-success"></i>
+                            <span>ارتفاع الطلب على السيارات الاقتصادية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financing Options -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>خيارات التمويل</h3>
+                    <ul>
+                        <li><i class="fas fa-university"></i> تمويل بنكي بفوائد منخفضة</li>
+                        <li><i class="fas fa-handshake"></i> تقسيط مع التاجر</li>
+                        <li><i class="fas fa-exchange-alt"></i> استبدال السيارة القديمة</li>
+                        <li><i class="fas fa-money-bill-wave"></i> دفع نقدي للحصول على خصم</li>
+                    </ul>
+                </div>
+
+                <!-- Safety Tips -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>نصائح الأمان</h3>
+                    <ul>
+                        <li><i class="fas fa-eye"></i> قابل البائع في مكان عام</li>
+                        <li><i class="fas fa-user-check"></i> تحقق من هوية البائع</li>
+                        <li><i class="fas fa-file-contract"></i> وقع عقد بيع رسمي</li>
+                        <li><i class="fas fa-search"></i> تحقق من تاريخ السيارة</li>
+                        <li><i class="fas fa-tools"></i> اطلب فحص فني شامل</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats">
+                <div class="stat-item">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">سيارة معروضة</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">عميل راضي</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">وكيل معتمد</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">دعم العملاء</div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <h3>هل تريد بيع سيارتك؟</h3>
+                <p>انضم إلى آلاف البائعين الذين يثقون في SY4Sale لبيع سياراتهم بأفضل الأسعار</p>
+                <a href="post-ad.html" class="cta-btn">
+                    <i class="fas fa-plus"></i>
+                    أضف إعلانك الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SY4Sale</h2>
+                    <p>منصة الإعلانات المبوبة الأولى في سوريا</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">سيارات</a></li>
+                            <li><a href="#">إلكترونيات</a></li>
+                            <li><a href="#">وظائف</a></li>
+                            <li><a href="#">عقارات</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>عن الموقع</h4>
+                        <ul>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">اتصل بنا</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>تواصل معنا</h4>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SY4Sale. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Controls -->
+    <div class="floating-controls">
+        <div class="floating-control-item">
+            <button class="floating-btn sort-btn" id="sortBtn">
+                <i class="fas fa-sort"></i>
+                <span>ترتيب</span>
+            </button>
+            <div class="floating-dropdown sort-dropdown" id="sortDropdown">
+                <select id="sortSelect">
+                    <option value="newest">الأحدث</option>
+                    <option value="price-low">السعر: من الأقل للأعلى</option>
+                    <option value="price-high">السعر: من الأعلى للأقل</option>
+                    <option value="year-new">السنة: الأحدث</option>
+                    <option value="mileage-low">المسافة: الأقل</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="floating-control-item">
+            <button class="floating-btn view-btn" id="viewBtn">
+                <i class="fas fa-th-large"></i>
+                <span>عرض</span>
+            </button>
+            <div class="floating-dropdown view-dropdown" id="viewDropdown">
+                <button class="view-option active" data-view="grid">
+                    <i class="fas fa-th-large"></i>
+                    <span>شبكة</span>
+                </button>
+                <button class="view-option" data-view="list">
+                    <i class="fas fa-list"></i>
+                    <span>قائمة</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Floating Controls */
+        .floating-controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-control-item {
+            position: relative;
+        }
+
+        .floating-btn {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3);
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 600;
+            min-width: 100px;
+            justify-content: center;
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 123, 255, 0.4);
+            background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+        }
+
+        .floating-btn i {
+            font-size: 16px;
+        }
+
+        .floating-dropdown {
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e9ecef;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            min-width: 200px;
+            overflow: hidden;
+        }
+
+        .floating-dropdown.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .floating-dropdown select {
+            width: 100%;
+            border: none;
+            padding: 15px;
+            background: white;
+            color: #2c3e50;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+            border-radius: 12px;
+        }
+
+        .floating-dropdown select:focus {
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+        }
+
+        .view-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            border: none;
+            background: white;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .view-option:hover {
+            background: #f8f9fa;
+            color: #007bff;
+        }
+
+        .view-option.active {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+        }
+
+        .view-option i {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .floating-controls {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .floating-btn {
+                padding: 10px 16px;
+                font-size: 13px;
+                min-width: 80px;
+            }
+
+            .floating-dropdown {
+                min-width: 180px;
+            }
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+    <script src="js/used-cars.js"></script>
+    
+    <script>
+        // Floating Controls Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortBtn = document.getElementById('sortBtn');
+            const viewBtn = document.getElementById('viewBtn');
+            const sortDropdown = document.getElementById('sortDropdown');
+            const viewDropdown = document.getElementById('viewDropdown');
+            const sortSelect = document.getElementById('sortSelect');
+            const viewOptions = document.querySelectorAll('.view-option');
+
+            // Toggle sort dropdown
+            sortBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                sortDropdown.classList.toggle('show');
+                viewDropdown.classList.remove('show');
+            });
+
+            // Toggle view dropdown
+            viewBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                viewDropdown.classList.toggle('show');
+                sortDropdown.classList.remove('show');
+            });
+
+            // Handle view option selection
+            viewOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    viewOptions.forEach(opt => opt.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const viewType = this.dataset.view;
+                    const listings = document.querySelector('.cars-grid');
+                    
+                    if (viewType === 'list') {
+                        listings.classList.add('list-view');
+                    } else {
+                        listings.classList.remove('list-view');
+                    }
+                    
+                    viewDropdown.classList.remove('show');
+                });
+            });
+
+            // Handle sort selection
+            sortSelect.addEventListener('change', function() {
+                const sortValue = this.value;
+                console.log('Sorting by:', sortValue);
+                sortDropdown.classList.remove('show');
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function() {
+                sortDropdown.classList.remove('show');
+                viewDropdown.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>

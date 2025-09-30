@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي - سوريا للبيع</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="sticky-header-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-text">سوريا للبيع</span>
+                        </a>
+                    </div>
+                    
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن أي شيء...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
+                        <div class="user-menu">
+                            <button class="user-menu-toggle">
+                                <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                                <span class="user-name">أحمد محمد</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="user-dropdown">
+                                <ul>
+                                    <li><a href="profile.html" class="active"><i class="fas fa-user"></i> الملف الشخصي</a></li>
+                                    <li><a href="my-ads.html"><i class="fas fa-bullhorn"></i> إعلاناتي</a></li>
+                                    <li><a href="favorites.html"><i class="fas fa-heart"></i> المفضلة</a></li>
+                                    <li><a href="messages.html"><i class="fas fa-envelope"></i> الرسائل</a></li>
+                                    <li><a href="settings.html"><i class="fas fa-cog"></i> الإعدادات</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="cars.html">سيارات</a></li>
+                    <li><a href="new-cars.html">سيارات جديدة</a></li>
+                    <li><a href="used-cars.html">سيارات مستعملة</a></li>
+                    <li><a href="automotive-categories.html">فئات السيارات</a></li>
+                    <li><a href="real-estate.html">عقارات</a></li>
+                    <li><a href="electronics.html">إلكترونيات</a></li>
+                    <li><a href="jobs.html">وظائف</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+            
+            <div class="mobile-menu">
+                <ul class="nav-list">
+                    <li><a href="category.html?cat=cars">سيارات</a></li>
+                    <li><a href="category.html?cat=electronics">إلكترونيات</a></li>
+                    <li><a href="category.html?cat=jobs">وظائف</a></li>
+                    <li><a href="category.html?cat=properties">عقارات</a></li>
+                    <li><a href="post-ad.html" class="btn btn-primary">أضف إعلان</a></li>
+                    <li><a href="profile.html" class="active"><i class="fas fa-user"></i> الملف الشخصي</a></li>
+                    <li><a href="my-ads.html"><i class="fas fa-bullhorn"></i> إعلاناتي</a></li>
+                    <li><a href="favorites.html"><i class="fas fa-heart"></i> المفضلة</a></li>
+                    <li><a href="messages.html"><i class="fas fa-envelope"></i> الرسائل</a></li>
+                    <li><a href="settings.html"><i class="fas fa-cog"></i> الإعدادات</a></li>
+                    <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li>الملف الشخصي</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-wrapper">
+                <!-- Sidebar -->
+                <div class="dashboard-sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar-wrapper">
+                            <img src="https://via.placeholder.com/100" alt="User" class="user-avatar">
+                            <button class="change-avatar-btn">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        <h3 class="user-name">أحمد محمد</h3>
+                        <p class="user-since">عضو منذ: يناير 2023</p>
+                        <div class="user-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">15</span>
+                                <span class="stat-label">إعلان</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">مباع</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">4.8</span>
+                                <span class="stat-label">تقييم</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <nav class="dashboard-nav">
+                        <ul>
+                            <li><a href="profile.html" class="active"><i class="fas fa-user"></i> الملف الشخصي</a></li>
+                            <li><a href="my-ads.html"><i class="fas fa-bullhorn"></i> إعلاناتي</a></li>
+                            <li><a href="favorites.html"><i class="fas fa-heart"></i> المفضلة</a></li>
+                            <li><a href="messages.html"><i class="fas fa-envelope"></i> الرسائل <span class="badge">3</span></a></li>
+                            <li><a href="notifications.html"><i class="fas fa-bell"></i> الإشعارات <span class="badge">5</span></a></li>
+                            <li><a href="settings.html"><i class="fas fa-cog"></i> الإعدادات</a></li>
+                            <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="dashboard-content">
+                    <div class="dashboard-header">
+                        <h1>لوحة التحكم</h1>
+                        <a href="post-ad.html" class="btn btn-primary"><i class="fas fa-plus"></i> إضافة إعلان جديد</a>
+                    </div>
+                    
+                    <!-- Dashboard Overview -->
+                    <div class="dashboard-overview">
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="overview-details">
+                                <h3>إعلاناتي</h3>
+                                <p class="overview-value">15</p>
+                                <p class="overview-status">
+                                    <span class="status-item"><span class="status-dot active"></span> نشط: 7</span>
+                                    <span class="status-item"><span class="status-dot pending"></span> قيد المراجعة: 2</span>
+                                    <span class="status-item"><span class="status-dot expired"></span> منتهي: 6</span>
+                                </p>
+                            </div>
+                            <a href="my-ads.html" class="overview-link"><i class="fas fa-arrow-left"></i></a>
+                        </div>
+                        
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="overview-details">
+                                <h3>المشاهدات</h3>
+                                <p class="overview-value">1,234</p>
+                                <p class="overview-trend up">
+                                    <i class="fas fa-arrow-up"></i> 12% منذ الشهر الماضي
+                                </p>
+                            </div>
+                            <a href="statistics.html" class="overview-link"><i class="fas fa-arrow-left"></i></a>
+                        </div>
+                        
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="overview-details">
+                                <h3>المفضلة</h3>
+                                <p class="overview-value">24</p>
+                                <p class="overview-trend up">
+                                    <i class="fas fa-arrow-up"></i> 5% منذ الشهر الماضي
+                                </p>
+                            </div>
+                            <a href="favorites.html" class="overview-link"><i class="fas fa-arrow-left"></i></a>
+                        </div>
+                        
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="overview-details">
+                                <h3>الرسائل</h3>
+                                <p class="overview-value">8</p>
+                                <p class="overview-status">
+                                    <span class="status-item"><span class="status-dot unread"></span> غير مقروءة: 3</span>
+                                </p>
+                            </div>
+                            <a href="messages.html" class="overview-link"><i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Ads -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>أحدث الإعلانات</h2>
+                            <a href="my-ads.html" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                        
+                        <div class="recent-ads">
+                            <div class="ad-item">
+                                <div class="ad-image">
+                                    <img src="https://via.placeholder.com/150" alt="Ad Image">
+                                    <span class="ad-status active">نشط</span>
+                                </div>
+                                <div class="ad-details">
+                                    <h3 class="ad-title"><a href="ad-details.html">سيارة هوندا سيفيك 2020 للبيع</a></h3>
+                                    <p class="ad-meta">
+                                        <span><i class="fas fa-map-marker-alt"></i> دمشق</span>
+                                        <span><i class="fas fa-clock"></i> منذ 3 أيام</span>
+                                    </p>
+                                    <p class="ad-price">15,000,000 ل.س</p>
+                                    <div class="ad-stats">
+                                        <span><i class="fas fa-eye"></i> 120 مشاهدة</span>
+                                        <span><i class="fas fa-heart"></i> 5 إعجاب</span>
+                                        <span><i class="fas fa-comment"></i> 3 رسائل</span>
+                                    </div>
+                                </div>
+                                <div class="ad-actions">
+                                    <button class="btn btn-sm btn-outline"><i class="fas fa-edit"></i> تعديل</button>
+                                    <button class="btn btn-sm btn-outline"><i class="fas fa-sync-alt"></i> تجديد</button>
+                                    <button class="btn btn-sm btn-outline danger"><i class="fas fa-trash"></i> حذف</button>
+                                </div>
+                            </div>
+                            
+                            <div class="ad-item">
+                                <div class="ad-image">
+                                    <img src="https://via.placeholder.com/150" alt="Ad Image">
+                                    <span class="ad-status pending">قيد المراجعة</span>
+                                </div>
+                                <div class="ad-details">
+                                    <h3 class="ad-title"><a href="ad-details.html">شقة للإيجار في المزة</a></h3>
+                                    <p class="ad-meta">
+                                        <span><i class="fas fa-map-marker-alt"></i> دمشق</span>
+                                        <span><i class="fas fa-clock"></i> منذ يوم واحد</span>
+                                    </p>
+                                    <p class="ad-price">200,000 ل.س / شهرياً</p>
+                                    <div class="ad-stats">
+                                        <span><i class="fas fa-eye"></i> 0 مشاهدة</span>
+                                        <span><i class="fas fa-heart"></i> 0 إعجاب</span>
+                                        <span><i class="fas fa-comment"></i> 0 رسائل</span>
+                                    </div>
+                                </div>
+                                <div class="ad-actions">
+                                    <button class="btn btn-sm btn-outline"><i class="fas fa-edit"></i> تعديل</button>
+                                    <button class="btn btn-sm btn-outline disabled"><i class="fas fa-sync-alt"></i> تجديد</button>
+                                    <button class="btn btn-sm btn-outline danger"><i class="fas fa-trash"></i> حذف</button>
+                                </div>
+                            </div>
+                            
+                            <div class="ad-item">
+                                <div class="ad-image">
+                                    <img src="https://via.placeholder.com/150" alt="Ad Image">
+                                    <span class="ad-status active">نشط</span>
+                                </div>
+                                <div class="ad-details">
+                                    <h3 class="ad-title"><a href="ad-details.html">لابتوب ماك بوك برو 2021</a></h3>
+                                    <p class="ad-meta">
+                                        <span><i class="fas fa-map-marker-alt"></i> حلب</span>
+                                        <span><i class="fas fa-clock"></i> منذ 5 أيام</span>
+                                    </p>
+                                    <p class="ad-price">4,500,000 ل.س</p>
+                                    <div class="ad-stats">
+                                        <span><i class="fas fa-eye"></i> 85 مشاهدة</span>
+                                        <span><i class="fas fa-heart"></i> 3 إعجاب</span>
+                                        <span><i class="fas fa-comment"></i> 2 رسائل</span>
+                                    </div>
+                                </div>
+                                <div class="ad-actions">
+                                    <button class="btn btn-sm btn-outline"><i class="fas fa-edit"></i> تعديل</button>
+                                    <button class="btn btn-sm btn-outline"><i class="fas fa-sync-alt"></i> تجديد</button>
+                                    <button class="btn btn-sm btn-outline danger"><i class="fas fa-trash"></i> حذف</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Messages -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>أحدث الرسائل</h2>
+                            <a href="messages.html" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                        
+                        <div class="recent-messages">
+                            <div class="message-item unread">
+                                <div class="message-sender">
+                                    <img src="https://via.placeholder.com/40" alt="Sender" class="sender-avatar">
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <h3 class="sender-name">محمد أحمد</h3>
+                                        <span class="message-time">منذ ساعتين</span>
+                                    </div>
+                                    <p class="message-subject">بخصوص: سيارة هوندا سيفيك 2020 للبيع</p>
+                                    <p class="message-preview">مرحباً، هل السيارة ما زالت متوفرة؟ وهل السعر قابل للتفاوض؟</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-sm btn-primary"><i class="fas fa-reply"></i> رد</button>
+                                </div>
+                            </div>
+                            
+                            <div class="message-item unread">
+                                <div class="message-sender">
+                                    <img src="https://via.placeholder.com/40" alt="Sender" class="sender-avatar">
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <h3 class="sender-name">سارة خالد</h3>
+                                        <span class="message-time">منذ 5 ساعات</span>
+                                    </div>
+                                    <p class="message-subject">بخصوص: لابتوب ماك بوك برو 2021</p>
+                                    <p class="message-preview">مرحباً، هل يمكنني معاينة الجهاز قبل الشراء؟ وما هي مواصفاته بالتفصيل؟</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-sm btn-primary"><i class="fas fa-reply"></i> رد</button>
+                                </div>
+                            </div>
+                            
+                            <div class="message-item">
+                                <div class="message-sender">
+                                    <img src="https://via.placeholder.com/40" alt="Sender" class="sender-avatar">
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <h3 class="sender-name">عمر حسن</h3>
+                                        <span class="message-time">منذ يوم واحد</span>
+                                    </div>
+                                    <p class="message-subject">بخصوص: سيارة هوندا سيفيك 2020 للبيع</p>
+                                    <p class="message-preview">شكراً لردك السريع. هل يمكنني رؤية السيارة غداً في المساء؟</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-sm btn-primary"><i class="fas fa-reply"></i> رد</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Performance Stats -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h2>إحصائيات الأداء</h2>
+                            <div class="period-selector">
+                                <button class="period-btn active">أسبوع</button>
+                                <button class="period-btn">شهر</button>
+                                <button class="period-btn">3 أشهر</button>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-stats">
+                            <div class="stats-chart">
+                                <!-- Chart will be rendered here by JavaScript -->
+                                <div class="chart-placeholder">
+                                    <div class="chart-bars">
+                                        <div class="chart-bar" style="height: 30%"></div>
+                                        <div class="chart-bar" style="height: 45%"></div>
+                                        <div class="chart-bar" style="height: 60%"></div>
+                                        <div class="chart-bar" style="height: 40%"></div>
+                                        <div class="chart-bar" style="height: 75%"></div>
+                                        <div class="chart-bar" style="height: 65%"></div>
+                                        <div class="chart-bar" style="height: 80%"></div>
+                                    </div>
+                                    <div class="chart-labels">
+                                        <span>الأحد</span>
+                                        <span>الإثنين</span>
+                                        <span>الثلاثاء</span>
+                                        <span>الأربعاء</span>
+                                        <span>الخميس</span>
+                                        <span>الجمعة</span>
+                                        <span>السبت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="stats-metrics">
+                                <div class="metric-item">
+                                    <h4>المشاهدات</h4>
+                                    <p class="metric-value">245</p>
+                                    <p class="metric-trend up">
+                                        <i class="fas fa-arrow-up"></i> 18%
+                                    </p>
+                                </div>
+                                
+                                <div class="metric-item">
+                                    <h4>الرسائل</h4>
+                                    <p class="metric-value">12</p>
+                                    <p class="metric-trend up">
+                                        <i class="fas fa-arrow-up"></i> 5%
+                                    </p>
+                                </div>
+                                
+                                <div class="metric-item">
+                                    <h4>المفضلة</h4>
+                                    <p class="metric-value">8</p>
+                                    <p class="metric-trend down">
+                                        <i class="fas fa-arrow-down"></i> 3%
+                                    </p>
+                                </div>
+                                
+                                <div class="metric-item">
+                                    <h4>نقرات الهاتف</h4>
+                                    <p class="metric-value">18</p>
+                                    <p class="metric-trend up">
+                                        <i class="fas fa-arrow-up"></i> 12%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">سوريا للبيع</span>
+                    </a>
+                    <p>منصة الإعلانات المبوبة الأولى في سوريا</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                            <li><a href="terms.html">شروط الاستخدام</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>الأقسام</h4>
+                        <ul>
+                            <li><a href="category.html?cat=cars">سيارات</a></li>
+                            <li><a href="category.html?cat=electronics">إلكترونيات</a></li>
+                            <li><a href="category.html?cat=jobs">وظائف</a></li>
+                            <li><a href="category.html?cat=properties">عقارات</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>حسابي</h4>
+                        <ul>
+                            <li><a href="login.html">تسجيل الدخول</a></li>
+                            <li><a href="register.html">إنشاء حساب</a></li>
+                            <li><a href="profile.html">الملف الشخصي</a></li>
+                            <li><a href="my-ads.html">إعلاناتي</a></li>
+                            <li><a href="favorites.html">المفضلة</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>تواصل معنا</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> دمشق، سوريا</li>
+                            <li><i class="fas fa-phone"></i> +963 11 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> info@sy4sale.com</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 سوريا للبيع. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // User menu toggle
+        const userMenuToggle = document.querySelector('.user-menu-toggle');
+        const userDropdown = document.querySelector('.user-dropdown');
+        
+        if (userMenuToggle && userDropdown) {
+            userMenuToggle.addEventListener('click', function() {
+                userDropdown.classList.toggle('active');
+            });
+            
+            document.addEventListener('click', function(event) {
+                if (!userMenuToggle.contains(event.target) && !userDropdown.contains(event.target)) {
+                    userDropdown.classList.remove('active');
+                }
+            });
+        }
+        
+        // Period selector
+        const periodBtns = document.querySelectorAll('.period-btn');
+        
+        if (periodBtns.length > 0) {
+            periodBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    periodBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    // Here you would update the chart data based on the selected period
+                });
+            });
+        }
+    </script>
+</body>
+</html>
