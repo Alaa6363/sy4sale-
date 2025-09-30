@@ -3,644 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SY4Sale - بيع واشتري ما تريد في سوريا</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>إعلانات الدراجات - sy4sale</title>
+    <meta name="description" content="تصفح أحدث إعلانات الدراجات والدراجات النارية في الكويت">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Sticky Header Container -->
-    <div class="sticky-header-container">
-        <!-- Header -->
-        <header class="site-header">
-            <div class="container">
-                <div class="header-wrapper">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="SY4Sale Logo">
-                        </a>
-                    </div>
-                    <div class="header-center">
-                        <div class="search-box">
-                            <input type="text" placeholder="ابحث عن...">
-                            <button type="button"><i class="fas fa-search"></i></button>
-                        </div>
-                        <div class="post-ad-button">
-                            <a href="post-ad.html" class="btn btn-primary">أضف إعلان</a>
-                        </div>
-                    </div>
-                    <div class="header-actions">
-                        <div class="auth-buttons">
-                            <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
-                            <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
-                        </div>
-                    </div>
+    <!-- Header (using existing sy4sale header styles) -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>sy4sale</h1>
+                        <span>سوق الكويت الإلكتروني</span>
+                    </a>
                 </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../cars.html">سيارات</a></li>
+                        <li><a href="../bikes.html" class="active">دراجات</a></li>
+                        <li><a href="../contact.html">اتصل بنا</a></li>
+                    </ul>
+                </nav>
             </div>
-        </header>
-        
-        <!-- Main Navigation -->
-        <nav class="main-nav">
-            <div class="container">
-                <ul>
-                    <li class="active"><a href="index.html">الرئيسية</a></li>
-                    <li><a href="cars.html">سيارات</a></li>
-                <li><a href="new-cars.html">سيارات جديدة</a></li>
-                <li><a href="real-estate.html">عقارات</a></li>
-                    <li><a href="electronics.html">إلكترونيات</a></li>
-                        <li><a href="jobs.html">وظائف</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        </div>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="مسار التنقل">
         <div class="container">
-            <div class="hero-content">
-                <h2>بيع واشتري ما تريد من أي مكان في سوريا</h2>
-                <div class="search-box">
-                    <input type="text" placeholder="ماذا تبحث عنه؟">
-                    <button class="search-btn"><i class="fas fa-search"></i></button>
-                </div>
-                <div class="category-tabs">
-                    <div class="tab active" data-category="all">الكل</div>
-                    <div class="tab" data-category="cars">سيارات</div>
-                    <div class="tab" data-category="electronics">إلكترونيات</div>
-                    <div class="tab" data-category="jobs">وظائف</div>
-                    <div class="tab" data-category="properties">عقارات</div>
-                </div>
-            </div>
+            <ol class="breadcrumb-list">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="../bikes.html">دراجات</a></li>
+                <li aria-current="page">جميع الإعلانات</li>
+            </ol>
         </div>
-    </section>
+    </nav>
 
-    <!-- Categories Section -->
-    <section class="categories-section">
+    <!-- Main Content -->
+    <main class="main-content">
         <div class="container">
-            <h3 class="section-title">تصفح حسب الفئات</h3>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-car"></i>
+            <!-- Featured Listings Section -->
+            <section class="listings-section" id="featured-section">
+                <header class="section-header">
+                    <div class="section-title">
+                        <span class="section-icon">⭐</span>
+                        <h2>إعلانات مميزة</h2>
                     </div>
-                    <h4>سيارات</h4>
-                    <p>تصفح جميع السيارات</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <h4>إلكترونيات</h4>
-                    <p>تصفح جميع الإلكترونيات</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h4>وظائف</h4>
-                    <p>تصفح جميع الوظائف</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h4>عقارات</h4>
-                    <p>تصفح جميع العقارات</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Car Ads Section -->
-    <section class="category-listings">
-        <div class="container">
-            <h3 class="section-title">إعلانات السيارات</h3>
-            <div class="scroll-container">
-                <div class="scroll-wrapper">
-                    <!-- Car Listing 1 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">سيارة هوندا سيفيك 2020</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
-                            <p class="listing-price">15,000,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Car Listing 2 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">مرسيدس E200 2019</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
-                            <p class="listing-price">25,000,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Car Listing 3 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">كيا سبورتاج 2021</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حمص</p>
-                            <p class="listing-price">18,000,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Car Listing 4 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">تويوتا كامري 2018</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> اللاذقية</p>
-                            <p class="listing-price">16,500,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Car Listing 5 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="سيارة">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">هيونداي توسان 2022</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> طرطوس</p>
-                            <p class="listing-price">20,000,000 ل.س</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll-controls">
-                    <button class="scroll-btn prev"><i class="fas fa-chevron-right"></i></button>
-                    <button class="scroll-btn next"><i class="fas fa-chevron-left"></i></button>
-                </div>
-            </div>
-            <div class="view-more">
-                <a href="#" class="btn btn-outline">عرض المزيد من السيارات</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Real Estate Ads Section -->
-    <section class="category-listings">
-        <div class="container">
-            <h3 class="section-title">إعلانات العقارات</h3>
-            <div class="scroll-container">
-                <div class="scroll-wrapper">
-                    <!-- Real Estate Listing 1 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="عقار">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">شقة للإيجار في المزة</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
-                            <p class="listing-price">500,000 ل.س/شهر</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Real Estate Listing 2 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="عقار">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">فيلا للبيع في يعفور</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> ريف دمشق</p>
-                            <p class="listing-price">250,000,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Real Estate Listing 3 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="عقار">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">محل تجاري للإيجار</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
-                            <p class="listing-price">800,000 ل.س/شهر</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Real Estate Listing 4 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="عقار">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">شقة للبيع في الشاطئ الأزرق</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> اللاذقية</p>
-                            <p class="listing-price">85,000,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Real Estate Listing 5 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="عقار">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">أرض للبيع في الزبداني</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> ريف دمشق</p>
-                            <p class="listing-price">40,000,000 ل.س</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll-controls">
-                    <button class="scroll-btn prev"><i class="fas fa-chevron-right"></i></button>
-                    <button class="scroll-btn next"><i class="fas fa-chevron-left"></i></button>
-                </div>
-            </div>
-            <div class="view-more">
-                <a href="#" class="btn btn-outline">عرض المزيد من العقارات</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Electronics Ads Section -->
-    <section class="category-listings">
-        <div class="container">
-            <h3 class="section-title">إعلانات الإلكترونيات</h3>
-            <div class="scroll-container">
-                <div class="scroll-wrapper">
-                    <!-- Electronics Listing 1 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="إلكترونيات">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">آيفون 13 برو ماكس</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
-                            <p class="listing-price">4,500,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Electronics Listing 2 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="إلكترونيات">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">لابتوب ماك بوك برو 2022</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
-                            <p class="listing-price">7,000,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Electronics Listing 3 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="إلكترونيات">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">تلفزيون سامسونج 65 بوصة</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حمص</p>
-                            <p class="listing-price">3,200,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Electronics Listing 4 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="إلكترونيات">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">بلايستيشن 5 جديد</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> اللاذقية</p>
-                            <p class="listing-price">3,800,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Electronics Listing 5 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="إلكترونيات">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">كاميرا كانون DSLR</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> طرطوس</p>
-                            <p class="listing-price">2,500,000 ل.س</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll-controls">
-                    <button class="scroll-btn prev"><i class="fas fa-chevron-right"></i></button>
-                    <button class="scroll-btn next"><i class="fas fa-chevron-left"></i></button>
-                </div>
-            </div>
-            <div class="view-more">
-                <a href="#" class="btn btn-outline">عرض المزيد من الإلكترونيات</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Jobs Ads Section -->
-    <section class="category-listings">
-        <div class="container">
-            <h3 class="section-title">إعلانات الوظائف</h3>
-            <div class="scroll-container">
-                <div class="scroll-wrapper">
-                    <!-- Jobs Listing 1 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="وظائف">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">مطلوب مهندس برمجيات</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
-                            <p class="listing-price">راتب تنافسي</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Jobs Listing 2 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="وظائف">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">مدير تسويق</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
-                            <p class="listing-price">1,500,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Jobs Listing 3 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="وظائف">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">محاسب خبرة 5 سنوات</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> اللاذقية</p>
-                            <p class="listing-price">1,200,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Jobs Listing 4 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="وظائف">
-                            <span class="listing-badge">مميز</span>
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">مصمم جرافيك</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
-                            <p class="listing-price">900,000 ل.س</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Jobs Listing 5 -->
-                    <div class="listing-card">
-                        <div class="listing-img">
-                            <img src="https://via.placeholder.com/300x200" alt="وظائف">
-                        </div>
-                        <div class="listing-content">
-                            <h4 class="listing-title">مندوب مبيعات</h4>
-                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حمص</p>
-                            <p class="listing-price">800,000 ل.س + عمولة</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll-controls">
-                    <button class="scroll-btn prev"><i class="fas fa-chevron-right"></i></button>
-                    <button class="scroll-btn next"><i class="fas fa-chevron-left"></i></button>
-                </div>
-            </div>
-            <div class="view-more">
-                <a href="#" class="btn btn-outline">عرض المزيد من الوظائف</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Syria Map Section -->
-    <section class="syria-map-section">
-        <div class="container">
-            <h3 class="section-title">تصفح حسب المحافظة</h3>
-            <div class="map-container">
-                <img src="https://via.placeholder.com/800x500" alt="خريطة سوريا" class="syria-map">
-                <div class="map-overlay">
-                    <div class="province" data-province="damascus">دمشق</div>
-                    <div class="province" data-province="aleppo">حلب</div>
-                    <div class="province" data-province="homs">حمص</div>
-                    <div class="province" data-province="latakia">اللاذقية</div>
-                    <div class="province" data-province="tartus">طرطوس</div>
-                    <div class="province" data-province="hama">حماة</div>
-                    <div class="province" data-province="deir-ez-zor">دير الزور</div>
-                    <div class="province" data-province="raqqa">الرقة</div>
-                    <div class="province" data-province="hasaka">الحسكة</div>
-                    <div class="province" data-province="daraa">درعا</div>
-                    <div class="province" data-province="sweida">السويداء</div>
-                    <div class="province" data-province="quneitra">القنيطرة</div>
-                    <div class="province" data-province="idlib">إدلب</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Featured Listings Section -->
-    <section class="featured-listings">
-        <div class="container">
-            <h3 class="section-title">إعلانات مميزة</h3>
-            <div class="listings-grid">
-                <!-- Listing Card 1 -->
-                <div class="listing-card">
-                    <div class="listing-img">
-                        <img src="https://via.placeholder.com/300x200" alt="إعلان">
-                        <span class="listing-badge">مميز</span>
-                    </div>
-                    <div class="listing-content">
-                        <h4 class="listing-title">سيارة هوندا سيفيك 2020</h4>
-                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
-                        <p class="listing-price">15,000,000 ل.س</p>
-                    </div>
-                </div>
+                    <a href="#" class="view-all-link" id="view-all-featured">
+                        <span>عرض الكل</span>
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </a>
+                </header>
                 
-                <!-- Listing Card 2 -->
-                <div class="listing-card">
-                    <div class="listing-img">
-                        <img src="https://via.placeholder.com/300x200" alt="إعلان">
+                <div class="listings-grid" id="featured-grid">
+                    <!-- Skeleton loaders -->
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
                     </div>
-                    <div class="listing-content">
-                        <h4 class="listing-title">شقة للإيجار في المزة</h4>
-                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> دمشق</p>
-                        <p class="listing-price">500,000 ل.س/شهر</p>
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
+                    </div>
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
+                    </div>
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Latest Listings Section -->
+            <section class="listings-section" id="latest-section">
+                <header class="section-header">
+                    <div class="section-title">
+                        <span class="section-icon">🕒</span>
+                        <h2>أحدث الإعلانات</h2>
+                    </div>
+                    <a href="#" class="view-all-link" id="view-all-latest">
+                        <span>عرض الكل</span>
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </a>
+                </header>
                 
-                <!-- Listing Card 3 -->
-                <div class="listing-card">
-                    <div class="listing-img">
-                        <img src="https://via.placeholder.com/300x200" alt="إعلان">
-                        <span class="listing-badge">مميز</span>
+                <div class="listings-grid" id="latest-grid">
+                    <!-- Skeleton loaders -->
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
                     </div>
-                    <div class="listing-content">
-                        <h4 class="listing-title">آيفون 13 برو ماكس</h4>
-                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> حلب</p>
-                        <p class="listing-price">4,500,000 ل.س</p>
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
+                    </div>
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
+                    </div>
+                    <div class="listing-card skeleton" aria-hidden="true">
+                        <div class="card-image skeleton-image"></div>
+                        <div class="card-body">
+                            <div class="skeleton-line skeleton-location"></div>
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-meta"></div>
+                            <div class="skeleton-line skeleton-price"></div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Listing Card 4 -->
-                <div class="listing-card">
-                    <div class="listing-img">
-                        <img src="https://via.placeholder.com/300x200" alt="إعلان">
-                    </div>
-                    <div class="listing-content">
-                        <h4 class="listing-title">مطلوب مهندس برمجيات</h4>
-                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> اللاذقية</p>
-                        <p class="listing-price">راتب تنافسي</p>
-                    </div>
-                </div>
-            </div>
-            <div class="view-more">
-                <a href="#" class="btn btn-outline">عرض المزيد</a>
-            </div>
+            </section>
         </div>
-    </section>
+    </main>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">10,000+</div>
-                    <div class="stat-text">عدد الإعلانات السنوية</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">5 مليون+</div>
-                    <div class="stat-text">عدد مشاهدات الإعلانات سنوياً</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">500,000+</div>
-                    <div class="stat-text">عدد محاولات الاتصال للإعلانات سنوياً</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tips Section -->
-    <section class="tips-section">
-        <div class="container">
-            <h3 class="section-title">نصائح لإنشاء الإعلان المثالي على SY4Sale</h3>
-            <div class="tips-grid">
-                <div class="tip-card">
-                    <div class="tip-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <h4>اختر الفئة الصحيحة</h4>
-                    <p>تأكد من أن المنتج أو الخدمة الخاصة بك مدرج في القسم الصحيح ليتمكن المشترين من العثور عليه بسهولة.</p>
-                </div>
-                <div class="tip-card">
-                    <div class="tip-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <h4>اجذب الانتباه بصور ذات جودة عالية</h4>
-                    <p>قم برفع صور واضحة ومضيئة من زوايا متعددة لعرض المنتج الخاص بك بدقة.</p>
-                </div>
-                <div class="tip-card">
-                    <div class="tip-icon">
-                        <i class="fas fa-heading"></i>
-                    </div>
-                    <h4>اكتب عنوانًا واضحًا</h4>
-                    <p>أنشئ عنوانًا قصيرًا وجاذبًا يصف بشكل دقيق ما تبيعه.</p>
-                </div>
-                <div class="tip-card">
-                    <div class="tip-icon">
-                        <i class="fas fa-tags"></i>
-                    </div>
-                    <h4>حدد السعر الصحيح</h4>
-                    <p>تحقق مما يباع من منتجات أو خدمات مماثلة واختر سعرًا مناسباً.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Download Section -->
-    <section class="app-download">
-        <div class="container">
-            <div class="app-content">
-                <div class="app-text">
-                    <h3>الصفقة الأفضل لك على بُعد ضغطة واحدة فقط</h3>
-                    <p>بيع، اشتري، واستأجر بسهولة مع SY4Sale، حمل التطبيق الآن.</p>
-                    <div class="app-buttons">
-                        <a href="#" class="app-btn">
-                            <i class="fab fa-google-play"></i>
-                            <span>Google Play</span>
-                        </a>
-                        <a href="#" class="app-btn">
-                            <i class="fab fa-apple"></i>
-                            <span>App Store</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="app-image">
-                    <img src="https://via.placeholder.com/300x600" alt="تطبيق SY4Sale">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
+    <!-- Footer (using existing sy4sale footer styles) -->
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>SY4Sale</h2>
-                    <p>منصة الإعلانات المبوبة الأولى في سوريا</p>
+                <div class="footer-section">
+                    <h3>sy4sale</h3>
+                    <p>سوق الكويت الإلكتروني الأول للإعلانات المبوبة</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>روابط سريعة</h4>
-                        <ul>
-                            <li><a href="#">الرئيسية</a></li>
-                            <li><a href="#">سيارات</a></li>
-                            <li><a href="#">إلكترونيات</a></li>
-                            <li><a href="#">وظائف</a></li>
-                            <li><a href="#">عقارات</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>عن الموقع</h4>
-                        <ul>
-                            <li><a href="#">من نحن</a></li>
-                            <li><a href="#">اتصل بنا</a></li>
-                            <li><a href="#">الأسئلة الشائعة</a></li>
-                            <li><a href="#">سياسة الخصوصية</a></li>
-                            <li><a href="#">شروط الاستخدام</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>تواصل معنا</h4>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../cars.html">سيارات</a></li>
+                        <li><a href="../bikes.html">دراجات</a></li>
+                        <li><a href="../contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <p>البريد الإلكتروني: info@sy4sale.com</p>
+                    <p>الهاتف: +965 1234 5678</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 SY4Sale. جميع الحقوق محفوظة.</p>
+                <p>&copy; ٢٠٢٤ sy4sale. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script type="module" src="app.js"></script>
 </body>
 </html>
